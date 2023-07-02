@@ -1,0 +1,535 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Tables</title>
+    <!-- bootstrap css file -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- datatable main css file -->
+    <link rel="stylesheet" href="datatable.css">
+    <!-- datatable button css for export, copy button etc css file -->
+    <link rel="stylesheet" href="https://cdn.datatables.net/buttons/2.3.6/css/buttons.dataTables.min.css"> 
+    <!-- custom css file -->
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    
+     <div class="container mt-5" >
+          <table id="mytable" class="table stripe hover order-column row-border compact">
+            <thead class="">
+                 <tr> <th>NAME</th> <th>AGE</th> <th>CITY</th> </tr>
+            </thead>
+            <tbody>
+                <tr> <td>Ritesh</td> <td>20</td> <td>Sasaram</td> </tr>
+                <tr> <td>Rahul</td> <td>19</td> <td>Dehri</td> </tr>
+                <tr> <td>Amit</td> <td>23</td> <td>Delhi</td> </tr>
+                <tr> <td>Anand</td> <td>21</td> <td>Kolkata</td> </tr>
+                <tr> <td>Ramesh</td> <td>12</td> <td>Mumbai</td> </tr>
+                <tr> <td>Mantu</td> <td>24</td> <td>Aurangabad</td> </tr>
+                <tr> <td>Akhilesh</td> <td>30</td> <td>Sahejani</td> </tr>
+                <tr> <td>Shivam</td> <td>15</td> <td>Piro</td> </tr>
+                <tr> <td>Juli</td> <td>28</td> <td>Kusudhi</td> </tr>
+                <tr> <td>Riya</td> <td>26</td> <td>Ara</td> </tr>
+                <tr> <td>kritika</td> <td>23</td> <td>Sasaram</td> </tr>
+                <tr> <td>Shaloni</td> <td>17</td> <td>bikramganj</td> </tr>
+                <tr> <td>Gyanjee</td> <td>21</td> <td>Bihar</td> </tr>
+                <tr> <td>Nandlal</td> <td>25</td> <td>Mau</td> </tr>
+                <tr> <td>Aman</td> <td>25</td> <td>chandauli</td> </tr>
+                <tr> <td>Pawan</td> <td>30</td> <td>Mugal Saray</td> </tr>
+                <tr> <td>Harsh</td> <td>31</td> <td>varanasi</td> </tr>
+                <tr> <td>Satpal</td> <td>32</td> <td>Uttar Pradesh</td> </tr>
+                <tr> <td>Abhishek</td> <td>29</td> <td>Uttar Pradesh</td> </tr>
+                <tr> <td>Nandini</td> <td>34</td> <td>Rauja</td> </tr>
+                <tr> <td>Salini</td> <td>31</td> <td>Sasaram</td> </tr>
+                <tr> <td>Sandeep</td> <td>15</td> <td>Sasaram</td> </tr>
+                <tr> <td>Rishi</td> <td>24</td> <td>Sasaram</td> </tr>
+                <tr> <td>Manish</td> <td>36</td> <td>Badhari</td> </tr>
+                <tr> <td>Sonu</td> <td>38</td> <td>Ara</td> </tr>
+                <tr> <td>Samresh</td> <td>50</td> <td>Baligaonn</td> </tr>
+                <tr> <td>Ritesh</td> <td>20</td> <td>Sasaram</td> </tr>
+                <tr> <td>Bajarang</td> <td>40</td> <td>Sasaram</td> </tr>
+                <tr> <td>Preeti</td> <td>34</td> <td>Chor</td> </tr>
+                <tr> <td>Chooti</td> <td>18</td> <td>Sasaram</td> </tr>
+                <tr> <td>Aradhana</td> <td>24</td> <td>Darigaon</td> </tr>
+                <tr> <td>Aakash</td> <td>22</td> <td>Sasaram</td> </tr>
+                <tr> <td>Suraj</td> <td>17</td> <td>Sasaram</td> </tr>
+                <tr> <td>Bittu</td> <td>20</td> <td>Chor</td> </tr>
+                <tr> <td>Chandani</td> <td>22</td> <td>Sasaram</td> </tr>
+                <tr> <td>Maya</td> <td>48</td> <td>Sasaram</td> </tr>
+                <tr> <td>Anju</td> <td>47</td> <td>Sahejani</td> </tr>
+                <tr> <td>Ritesh</td> <td>20</td> <td>Sasaram</td> </tr>
+                <tr> <td>Rahul</td> <td>19</td> <td>Dehri</td> </tr>
+                <tr> <td>Amit</td> <td>23</td> <td>Delhi</td> </tr>
+                <tr> <td>Anand</td> <td>21</td> <td>Kolkata</td> </tr>
+                <tr> <td>Ramesh</td> <td>12</td> <td>Mumbai</td> </tr>
+                <tr> <td>Mantu</td> <td>24</td> <td>Aurangabad</td> </tr>
+                <tr> <td>Akhilesh</td> <td>30</td> <td>Sahejani</td> </tr>
+                <tr> <td>Shivam</td> <td>15</td> <td>Piro</td> </tr>
+                <tr> <td>Juli</td> <td>28</td> <td>Kusudhi</td> </tr>
+                <tr> <td>Riya</td> <td>26</td> <td>Ara</td> </tr>
+                <tr> <td>kritika</td> <td>23</td> <td>Sasaram</td> </tr>
+                <tr> <td>Shaloni</td> <td>17</td> <td>bikramganj</td> </tr>
+                <tr> <td>Gyanjee</td> <td>21</td> <td>Bihar</td> </tr>
+                <tr> <td>Nandlal</td> <td>25</td> <td>Mau</td> </tr>
+                <tr> <td>Aman</td> <td>25</td> <td>chandauli</td> </tr>
+                <tr> <td>Pawan</td> <td>30</td> <td>Mugal Saray</td> </tr>
+                <tr> <td>Harsh</td> <td>31</td> <td>varanasi</td> </tr>
+                <tr> <td>Satpal</td> <td>32</td> <td>Uttar Pradesh</td> </tr>
+                <tr> <td>Abhishek</td> <td>29</td> <td>Uttar Pradesh</td> </tr>
+                <tr> <td>Nandini</td> <td>34</td> <td>Rauja</td> </tr>
+                <tr> <td>Salini</td> <td>31</td> <td>Sasaram</td> </tr>
+                <tr> <td>Sandeep</td> <td>15</td> <td>Sasaram</td> </tr>
+                <tr> <td>Rishi</td> <td>24</td> <td>Sasaram</td> </tr>
+                <tr> <td>Manish</td> <td>36</td> <td>Badhari</td> </tr>
+                <tr> <td>Sonu</td> <td>38</td> <td>Ara</td> </tr>
+                <tr> <td>Samresh</td> <td>50</td> <td>Baligaonn</td> </tr>
+                <tr> <td>Ritesh</td> <td>20</td> <td>Sasaram</td> </tr>
+                <tr> <td>Bajarang</td> <td>40</td> <td>Sasaram</td> </tr>
+                <tr> <td>Preeti</td> <td>34</td> <td>Chor</td> </tr>
+                <tr> <td>Chooti</td> <td>18</td> <td>Sasaram</td> </tr>
+                <tr> <td>Aradhana</td> <td>24</td> <td>Darigaon</td> </tr>
+                <tr> <td>Aakash</td> <td>22</td> <td>Sasaram</td> </tr>
+                <tr> <td>Suraj</td> <td>17</td> <td>Sasaram</td> </tr>
+                <tr> <td>Bittu</td> <td>20</td> <td>Chor</td> </tr>
+                <tr> <td>Chandani</td> <td>22</td> <td>Sasaram</td> </tr>
+                <tr> <td>Maya</td> <td>48</td> <td>Sasaram</td> </tr>
+                <tr> <td>Anju</td> <td>47</td> <td>Sahejani</td> </tr>
+                <tr> <td>Ritesh</td> <td>20</td> <td>Sasaram</td> </tr>
+                <tr> <td>Rahul</td> <td>19</td> <td>Dehri</td> </tr>
+                <tr> <td>Amit</td> <td>23</td> <td>Delhi</td> </tr>
+                <tr> <td>Anand</td> <td>21</td> <td>Kolkata</td> </tr>
+                <tr> <td>Ramesh</td> <td>12</td> <td>Mumbai</td> </tr>
+                <tr> <td>Mantu</td> <td>24</td> <td>Aurangabad</td> </tr>
+                <tr> <td>Akhilesh</td> <td>30</td> <td>Sahejani</td> </tr>
+                <tr> <td>Shivam</td> <td>15</td> <td>Piro</td> </tr>
+                <tr> <td>Juli</td> <td>28</td> <td>Kusudhi</td> </tr>
+                <tr> <td>Riya</td> <td>26</td> <td>Ara</td> </tr>
+                <tr> <td>kritika</td> <td>23</td> <td>Sasaram</td> </tr>
+                <tr> <td>Shaloni</td> <td>17</td> <td>bikramganj</td> </tr>
+                <tr> <td>Gyanjee</td> <td>21</td> <td>Bihar</td> </tr>
+                <tr> <td>Nandlal</td> <td>25</td> <td>Mau</td> </tr>
+                <tr> <td>Aman</td> <td>25</td> <td>chandauli</td> </tr>
+                <tr> <td>Pawan</td> <td>30</td> <td>Mugal Saray</td> </tr>
+                <tr> <td>Harsh</td> <td>31</td> <td>varanasi</td> </tr>
+                <tr> <td>Satpal</td> <td>32</td> <td>Uttar Pradesh</td> </tr>
+                <tr> <td>Abhishek</td> <td>29</td> <td>Uttar Pradesh</td> </tr>
+                <tr> <td>Nandini</td> <td>34</td> <td>Rauja</td> </tr>
+                <tr> <td>Salini</td> <td>31</td> <td>Sasaram</td> </tr>
+                <tr> <td>Sandeep</td> <td>15</td> <td>Sasaram</td> </tr>
+                <tr> <td>Rishi</td> <td>24</td> <td>Sasaram</td> </tr>
+                <tr> <td>Manish</td> <td>36</td> <td>Badhari</td> </tr>
+                <tr> <td>Sonu</td> <td>38</td> <td>Ara</td> </tr>
+                <tr> <td>Samresh</td> <td>50</td> <td>Baligaonn</td> </tr>
+                <tr> <td>Ritesh</td> <td>20</td> <td>Sasaram</td> </tr>
+                <tr> <td>Bajarang</td> <td>40</td> <td>Sasaram</td> </tr>
+                <tr> <td>Preeti</td> <td>34</td> <td>Chor</td> </tr>
+                <tr> <td>Chooti</td> <td>18</td> <td>Sasaram</td> </tr>
+                <tr> <td>Aradhana</td> <td>24</td> <td>Darigaon</td> </tr>
+                <tr> <td>Aakash</td> <td>22</td> <td>Sasaram</td> </tr>
+                <tr> <td>Suraj</td> <td>17</td> <td>Sasaram</td> </tr>
+                <tr> <td>Bittu</td> <td>20</td> <td>Chor</td> </tr>
+                <tr> <td>Chandani</td> <td>22</td> <td>Sasaram</td> </tr>
+                <tr> <td>Maya</td> <td>48</td> <td>Sasaram</td> </tr>
+                <tr> <td>Anju</td> <td>47</td> <td>Sahejani</td> </tr>
+                <tr> <td>Ritesh</td> <td>20</td> <td>Sasaram</td> </tr>
+                <tr> <td>Rahul</td> <td>19</td> <td>Dehri</td> </tr>
+                <tr> <td>Amit</td> <td>23</td> <td>Delhi</td> </tr>
+                <tr> <td>Anand</td> <td>21</td> <td>Kolkata</td> </tr>
+                <tr> <td>Ramesh</td> <td>12</td> <td>Mumbai</td> </tr>
+                <tr> <td>Mantu</td> <td>24</td> <td>Aurangabad</td> </tr>
+                <tr> <td>Akhilesh</td> <td>30</td> <td>Sahejani</td> </tr>
+                <tr> <td>Shivam</td> <td>15</td> <td>Piro</td> </tr>
+                <tr> <td>Juli</td> <td>28</td> <td>Kusudhi</td> </tr>
+                <tr> <td>Riya</td> <td>26</td> <td>Ara</td> </tr>
+                <tr> <td>kritika</td> <td>23</td> <td>Sasaram</td> </tr>
+                <tr> <td>Shaloni</td> <td>17</td> <td>bikramganj</td> </tr>
+                <tr> <td>Gyanjee</td> <td>21</td> <td>Bihar</td> </tr>
+                <tr> <td>Nandlal</td> <td>25</td> <td>Mau</td> </tr>
+                <tr> <td>Aman</td> <td>25</td> <td>chandauli</td> </tr>
+                <tr> <td>Pawan</td> <td>30</td> <td>Mugal Saray</td> </tr>
+                <tr> <td>Harsh</td> <td>31</td> <td>varanasi</td> </tr>
+                <tr> <td>Satpal</td> <td>32</td> <td>Uttar Pradesh</td> </tr>
+                <tr> <td>Abhishek</td> <td>29</td> <td>Uttar Pradesh</td> </tr>
+                <tr> <td>Nandini</td> <td>34</td> <td>Rauja</td> </tr>
+                <tr> <td>Salini</td> <td>31</td> <td>Sasaram</td> </tr>
+                <tr> <td>Sandeep</td> <td>15</td> <td>Sasaram</td> </tr>
+                <tr> <td>Rishi</td> <td>24</td> <td>Sasaram</td> </tr>
+                <tr> <td>Manish</td> <td>36</td> <td>Badhari</td> </tr>
+                <tr> <td>Sonu</td> <td>38</td> <td>Ara</td> </tr>
+                <tr> <td>Samresh</td> <td>50</td> <td>Baligaonn</td> </tr>
+                <tr> <td>Ritesh</td> <td>20</td> <td>Sasaram</td> </tr>
+                <tr> <td>Bajarang</td> <td>40</td> <td>Sasaram</td> </tr>
+                <tr> <td>Preeti</td> <td>34</td> <td>Chor</td> </tr>
+                <tr> <td>Chooti</td> <td>18</td> <td>Sasaram</td> </tr>
+                <tr> <td>Aradhana</td> <td>24</td> <td>Darigaon</td> </tr>
+                <tr> <td>Aakash</td> <td>22</td> <td>Sasaram</td> </tr>
+                <tr> <td>Suraj</td> <td>17</td> <td>Sasaram</td> </tr>
+                <tr> <td>Bittu</td> <td>20</td> <td>Chor</td> </tr>
+                <tr> <td>Chandani</td> <td>22</td> <td>Sasaram</td> </tr>
+                <tr> <td>Maya</td> <td>48</td> <td>Sasaram</td> </tr>
+                <tr> <td>Anju</td> <td>47</td> <td>Sahejani</td> </tr>
+                <tr> <td>Ritesh</td> <td>20</td> <td>Sasaram</td> </tr>
+                <tr> <td>Rahul</td> <td>19</td> <td>Dehri</td> </tr>
+                <tr> <td>Amit</td> <td>23</td> <td>Delhi</td> </tr>
+                <tr> <td>Anand</td> <td>21</td> <td>Kolkata</td> </tr>
+                <tr> <td>Ramesh</td> <td>12</td> <td>Mumbai</td> </tr>
+                <tr> <td>Mantu</td> <td>24</td> <td>Aurangabad</td> </tr>
+                <tr> <td>Akhilesh</td> <td>30</td> <td>Sahejani</td> </tr>
+                <tr> <td>Shivam</td> <td>15</td> <td>Piro</td> </tr>
+                <tr> <td>Juli</td> <td>28</td> <td>Kusudhi</td> </tr>
+                <tr> <td>Riya</td> <td>26</td> <td>Ara</td> </tr>
+                <tr> <td>kritika</td> <td>23</td> <td>Sasaram</td> </tr>
+                <tr> <td>Shaloni</td> <td>17</td> <td>bikramganj</td> </tr>
+                <tr> <td>Gyanjee</td> <td>21</td> <td>Bihar</td> </tr>
+                <tr> <td>Nandlal</td> <td>25</td> <td>Mau</td> </tr>
+                <tr> <td>Aman</td> <td>25</td> <td>chandauli</td> </tr>
+                <tr> <td>Pawan</td> <td>30</td> <td>Mugal Saray</td> </tr>
+                <tr> <td>Harsh</td> <td>31</td> <td>varanasi</td> </tr>
+                <tr> <td>Satpal</td> <td>32</td> <td>Uttar Pradesh</td> </tr>
+                <tr> <td>Abhishek</td> <td>29</td> <td>Uttar Pradesh</td> </tr>
+                <tr> <td>Nandini</td> <td>34</td> <td>Rauja</td> </tr>
+                <tr> <td>Salini</td> <td>31</td> <td>Sasaram</td> </tr>
+                <tr> <td>Sandeep</td> <td>15</td> <td>Sasaram</td> </tr>
+                <tr> <td>Rishi</td> <td>24</td> <td>Sasaram</td> </tr>
+                <tr> <td>Manish</td> <td>36</td> <td>Badhari</td> </tr>
+                <tr> <td>Sonu</td> <td>38</td> <td>Ara</td> </tr>
+                <tr> <td>Samresh</td> <td>50</td> <td>Baligaonn</td> </tr>
+                <tr> <td>Ritesh</td> <td>20</td> <td>Sasaram</td> </tr>
+                <tr> <td>Bajarang</td> <td>40</td> <td>Sasaram</td> </tr>
+                <tr> <td>Preeti</td> <td>34</td> <td>Chor</td> </tr>
+                <tr> <td>Chooti</td> <td>18</td> <td>Sasaram</td> </tr>
+                <tr> <td>Aradhana</td> <td>24</td> <td>Darigaon</td> </tr>
+                <tr> <td>Aakash</td> <td>22</td> <td>Sasaram</td> </tr>
+                <tr> <td>Suraj</td> <td>17</td> <td>Sasaram</td> </tr>
+                <tr> <td>Bittu</td> <td>20</td> <td>Chor</td> </tr>
+                <tr> <td>Chandani</td> <td>22</td> <td>Sasaram</td> </tr>
+                <tr> <td>Maya</td> <td>48</td> <td>Sasaram</td> </tr>
+                <tr> <td>Anju</td> <td>47</td> <td>Sahejani</td> </tr>
+                <tr> <td>Ritesh</td> <td>20</td> <td>Sasaram</td> </tr>
+                <tr> <td>Rahul</td> <td>19</td> <td>Dehri</td> </tr>
+                <tr> <td>Amit</td> <td>23</td> <td>Delhi</td> </tr>
+                <tr> <td>Anand</td> <td>21</td> <td>Kolkata</td> </tr>
+                <tr> <td>Ramesh</td> <td>12</td> <td>Mumbai</td> </tr>
+                <tr> <td>Mantu</td> <td>24</td> <td>Aurangabad</td> </tr>
+                <tr> <td>Akhilesh</td> <td>30</td> <td>Sahejani</td> </tr>
+                <tr> <td>Shivam</td> <td>15</td> <td>Piro</td> </tr>
+                <tr> <td>Juli</td> <td>28</td> <td>Kusudhi</td> </tr>
+                <tr> <td>Riya</td> <td>26</td> <td>Ara</td> </tr>
+                <tr> <td>kritika</td> <td>23</td> <td>Sasaram</td> </tr>
+                <tr> <td>Shaloni</td> <td>17</td> <td>bikramganj</td> </tr>
+                <tr> <td>Gyanjee</td> <td>21</td> <td>Bihar</td> </tr>
+                <tr> <td>Nandlal</td> <td>25</td> <td>Mau</td> </tr>
+                <tr> <td>Aman</td> <td>25</td> <td>chandauli</td> </tr>
+                <tr> <td>Pawan</td> <td>30</td> <td>Mugal Saray</td> </tr>
+                <tr> <td>Harsh</td> <td>31</td> <td>varanasi</td> </tr>
+                <tr> <td>Satpal</td> <td>32</td> <td>Uttar Pradesh</td> </tr>
+                <tr> <td>Abhishek</td> <td>29</td> <td>Uttar Pradesh</td> </tr>
+                <tr> <td>Nandini</td> <td>34</td> <td>Rauja</td> </tr>
+                <tr> <td>Salini</td> <td>31</td> <td>Sasaram</td> </tr>
+                <tr> <td>Sandeep</td> <td>15</td> <td>Sasaram</td> </tr>
+                <tr> <td>Rishi</td> <td>24</td> <td>Sasaram</td> </tr>
+                <tr> <td>Manish</td> <td>36</td> <td>Badhari</td> </tr>
+                <tr> <td>Sonu</td> <td>38</td> <td>Ara</td> </tr>
+                <tr> <td>Samresh</td> <td>50</td> <td>Baligaonn</td> </tr>
+                <tr> <td>Ritesh</td> <td>20</td> <td>Sasaram</td> </tr>
+                <tr> <td>Bajarang</td> <td>40</td> <td>Sasaram</td> </tr>
+                <tr> <td>Preeti</td> <td>34</td> <td>Chor</td> </tr>
+                <tr> <td>Chooti</td> <td>18</td> <td>Sasaram</td> </tr>
+                <tr> <td>Aradhana</td> <td>24</td> <td>Darigaon</td> </tr>
+                <tr> <td>Aakash</td> <td>22</td> <td>Sasaram</td> </tr>
+                <tr> <td>Suraj</td> <td>17</td> <td>Sasaram</td> </tr>
+                <tr> <td>Bittu</td> <td>20</td> <td>Chor</td> </tr>
+                <tr> <td>Chandani</td> <td>22</td> <td>Sasaram</td> </tr>
+                <tr> <td>Maya</td> <td>48</td> <td>Sasaram</td> </tr>
+                <tr> <td>Anju</td> <td>47</td> <td>Sahejani</td> </tr>
+                <tr> <td>Ritesh</td> <td>20</td> <td>Sasaram</td> </tr>
+                <tr> <td>Rahul</td> <td>19</td> <td>Dehri</td> </tr>
+                <tr> <td>Amit</td> <td>23</td> <td>Delhi</td> </tr>
+                <tr> <td>Anand</td> <td>21</td> <td>Kolkata</td> </tr>
+                <tr> <td>Ramesh</td> <td>12</td> <td>Mumbai</td> </tr>
+                <tr> <td>Mantu</td> <td>24</td> <td>Aurangabad</td> </tr>
+                <tr> <td>Akhilesh</td> <td>30</td> <td>Sahejani</td> </tr>
+                <tr> <td>Shivam</td> <td>15</td> <td>Piro</td> </tr>
+                <tr> <td>Juli</td> <td>28</td> <td>Kusudhi</td> </tr>
+                <tr> <td>Riya</td> <td>26</td> <td>Ara</td> </tr>
+                <tr> <td>kritika</td> <td>23</td> <td>Sasaram</td> </tr>
+                <tr> <td>Shaloni</td> <td>17</td> <td>bikramganj</td> </tr>
+                <tr> <td>Gyanjee</td> <td>21</td> <td>Bihar</td> </tr>
+                <tr> <td>Nandlal</td> <td>25</td> <td>Mau</td> </tr>
+                <tr> <td>Aman</td> <td>25</td> <td>chandauli</td> </tr>
+                <tr> <td>Pawan</td> <td>30</td> <td>Mugal Saray</td> </tr>
+                <tr> <td>Harsh</td> <td>31</td> <td>varanasi</td> </tr>
+                <tr> <td>Satpal</td> <td>32</td> <td>Uttar Pradesh</td> </tr>
+                <tr> <td>Abhishek</td> <td>29</td> <td>Uttar Pradesh</td> </tr>
+                <tr> <td>Nandini</td> <td>34</td> <td>Rauja</td> </tr>
+                <tr> <td>Salini</td> <td>31</td> <td>Sasaram</td> </tr>
+                <tr> <td>Sandeep</td> <td>15</td> <td>Sasaram</td> </tr>
+                <tr> <td>Rishi</td> <td>24</td> <td>Sasaram</td> </tr>
+                <tr> <td>Manish</td> <td>36</td> <td>Badhari</td> </tr>
+                <tr> <td>Sonu</td> <td>38</td> <td>Ara</td> </tr>
+                <tr> <td>Samresh</td> <td>50</td> <td>Baligaonn</td> </tr>
+                <tr> <td>Ritesh</td> <td>20</td> <td>Sasaram</td> </tr>
+                <tr> <td>Bajarang</td> <td>40</td> <td>Sasaram</td> </tr>
+                <tr> <td>Preeti</td> <td>34</td> <td>Chor</td> </tr>
+                <tr> <td>Chooti</td> <td>18</td> <td>Sasaram</td> </tr>
+                <tr> <td>Aradhana</td> <td>24</td> <td>Darigaon</td> </tr>
+                <tr> <td>Aakash</td> <td>22</td> <td>Sasaram</td> </tr>
+                <tr> <td>Suraj</td> <td>17</td> <td>Sasaram</td> </tr>
+                <tr> <td>Bittu</td> <td>20</td> <td>Chor</td> </tr>
+                <tr> <td>Chandani</td> <td>22</td> <td>Sasaram</td> </tr>
+                <tr> <td>Maya</td> <td>48</td> <td>Sasaram</td> </tr>
+                <tr> <td>Anju</td> <td>47</td> <td>Sahejani</td> </tr>
+                <tr> <td>Ritesh</td> <td>20</td> <td>Sasaram</td> </tr>
+                <tr> <td>Rahul</td> <td>19</td> <td>Dehri</td> </tr>
+                <tr> <td>Amit</td> <td>23</td> <td>Delhi</td> </tr>
+                <tr> <td>Anand</td> <td>21</td> <td>Kolkata</td> </tr>
+                <tr> <td>Ramesh</td> <td>12</td> <td>Mumbai</td> </tr>
+                <tr> <td>Mantu</td> <td>24</td> <td>Aurangabad</td> </tr>
+                <tr> <td>Akhilesh</td> <td>30</td> <td>Sahejani</td> </tr>
+                <tr> <td>Shivam</td> <td>15</td> <td>Piro</td> </tr>
+                <tr> <td>Juli</td> <td>28</td> <td>Kusudhi</td> </tr>
+                <tr> <td>Riya</td> <td>26</td> <td>Ara</td> </tr>
+                <tr> <td>kritika</td> <td>23</td> <td>Sasaram</td> </tr>
+                <tr> <td>Shaloni</td> <td>17</td> <td>bikramganj</td> </tr>
+                <tr> <td>Gyanjee</td> <td>21</td> <td>Bihar</td> </tr>
+                <tr> <td>Nandlal</td> <td>25</td> <td>Mau</td> </tr>
+                <tr> <td>Aman</td> <td>25</td> <td>chandauli</td> </tr>
+                <tr> <td>Pawan</td> <td>30</td> <td>Mugal Saray</td> </tr>
+                <tr> <td>Harsh</td> <td>31</td> <td>varanasi</td> </tr>
+                <tr> <td>Satpal</td> <td>32</td> <td>Uttar Pradesh</td> </tr>
+                <tr> <td>Abhishek</td> <td>29</td> <td>Uttar Pradesh</td> </tr>
+                <tr> <td>Nandini</td> <td>34</td> <td>Rauja</td> </tr>
+                <tr> <td>Salini</td> <td>31</td> <td>Sasaram</td> </tr>
+                <tr> <td>Sandeep</td> <td>15</td> <td>Sasaram</td> </tr>
+                <tr> <td>Rishi</td> <td>24</td> <td>Sasaram</td> </tr>
+                <tr> <td>Manish</td> <td>36</td> <td>Badhari</td> </tr>
+                <tr> <td>Sonu</td> <td>38</td> <td>Ara</td> </tr>
+                <tr> <td>Samresh</td> <td>50</td> <td>Baligaonn</td> </tr>
+                <tr> <td>Ritesh</td> <td>20</td> <td>Sasaram</td> </tr>
+                <tr> <td>Bajarang</td> <td>40</td> <td>Sasaram</td> </tr>
+                <tr> <td>Preeti</td> <td>34</td> <td>Chor</td> </tr>
+                <tr> <td>Chooti</td> <td>18</td> <td>Sasaram</td> </tr>
+                <tr> <td>Aradhana</td> <td>24</td> <td>Darigaon</td> </tr>
+                <tr> <td>Aakash</td> <td>22</td> <td>Sasaram</td> </tr>
+                <tr> <td>Suraj</td> <td>17</td> <td>Sasaram</td> </tr>
+                <tr> <td>Bittu</td> <td>20</td> <td>Chor</td> </tr>
+                <tr> <td>Chandani</td> <td>22</td> <td>Sasaram</td> </tr>
+                <tr> <td>Maya</td> <td>48</td> <td>Sasaram</td> </tr>
+                <tr> <td>Anju</td> <td>47</td> <td>Sahejani</td> </tr>
+                <tr> <td>Ritesh</td> <td>20</td> <td>Sasaram</td> </tr>
+                <tr> <td>Rahul</td> <td>19</td> <td>Dehri</td> </tr>
+                <tr> <td>Amit</td> <td>23</td> <td>Delhi</td> </tr>
+                <tr> <td>Anand</td> <td>21</td> <td>Kolkata</td> </tr>
+                <tr> <td>Ramesh</td> <td>12</td> <td>Mumbai</td> </tr>
+                <tr> <td>Mantu</td> <td>24</td> <td>Aurangabad</td> </tr>
+                <tr> <td>Akhilesh</td> <td>30</td> <td>Sahejani</td> </tr>
+                <tr> <td>Shivam</td> <td>15</td> <td>Piro</td> </tr>
+                <tr> <td>Juli</td> <td>28</td> <td>Kusudhi</td> </tr>
+                <tr> <td>Riya</td> <td>26</td> <td>Ara</td> </tr>
+                <tr> <td>kritika</td> <td>23</td> <td>Sasaram</td> </tr>
+                <tr> <td>Shaloni</td> <td>17</td> <td>bikramganj</td> </tr>
+                <tr> <td>Gyanjee</td> <td>21</td> <td>Bihar</td> </tr>
+                <tr> <td>Nandlal</td> <td>25</td> <td>Mau</td> </tr>
+                <tr> <td>Aman</td> <td>25</td> <td>chandauli</td> </tr>
+                <tr> <td>Pawan</td> <td>30</td> <td>Mugal Saray</td> </tr>
+                <tr> <td>Harsh</td> <td>31</td> <td>varanasi</td> </tr>
+                <tr> <td>Satpal</td> <td>32</td> <td>Uttar Pradesh</td> </tr>
+                <tr> <td>Abhishek</td> <td>29</td> <td>Uttar Pradesh</td> </tr>
+                <tr> <td>Nandini</td> <td>34</td> <td>Rauja</td> </tr>
+                <tr> <td>Salini</td> <td>31</td> <td>Sasaram</td> </tr>
+                <tr> <td>Sandeep</td> <td>15</td> <td>Sasaram</td> </tr>
+                <tr> <td>Rishi</td> <td>24</td> <td>Sasaram</td> </tr>
+                <tr> <td>Manish</td> <td>36</td> <td>Badhari</td> </tr>
+                <tr> <td>Sonu</td> <td>38</td> <td>Ara</td> </tr>
+                <tr> <td>Samresh</td> <td>50</td> <td>Baligaonn</td> </tr>
+                <tr> <td>Ritesh</td> <td>20</td> <td>Sasaram</td> </tr>
+                <tr> <td>Bajarang</td> <td>40</td> <td>Sasaram</td> </tr>
+                <tr> <td>Preeti</td> <td>34</td> <td>Chor</td> </tr>
+                <tr> <td>Chooti</td> <td>18</td> <td>Sasaram</td> </tr>
+                <tr> <td>Aradhana</td> <td>24</td> <td>Darigaon</td> </tr>
+                <tr> <td>Aakash</td> <td>22</td> <td>Sasaram</td> </tr>
+                <tr> <td>Suraj</td> <td>17</td> <td>Sasaram</td> </tr>
+                <tr> <td>Bittu</td> <td>20</td> <td>Chor</td> </tr>
+                <tr> <td>Chandani</td> <td>22</td> <td>Sasaram</td> </tr>
+                <tr> <td>Maya</td> <td>48</td> <td>Sasaram</td> </tr>
+                <tr> <td>Anju</td> <td>47</td> <td>Sahejani</td> </tr>
+                <tr> <td>Ritesh</td> <td>20</td> <td>Sasaram</td> </tr>
+                <tr> <td>Rahul</td> <td>19</td> <td>Dehri</td> </tr>
+                <tr> <td>Amit</td> <td>23</td> <td>Delhi</td> </tr>
+                <tr> <td>Anand</td> <td>21</td> <td>Kolkata</td> </tr>
+                <tr> <td>Ramesh</td> <td>12</td> <td>Mumbai</td> </tr>
+                <tr> <td>Mantu</td> <td>24</td> <td>Aurangabad</td> </tr>
+                <tr> <td>Akhilesh</td> <td>30</td> <td>Sahejani</td> </tr>
+                <tr> <td>Shivam</td> <td>15</td> <td>Piro</td> </tr>
+                <tr> <td>Juli</td> <td>28</td> <td>Kusudhi</td> </tr>
+                <tr> <td>Riya</td> <td>26</td> <td>Ara</td> </tr>
+                <tr> <td>kritika</td> <td>23</td> <td>Sasaram</td> </tr>
+                <tr> <td>Shaloni</td> <td>17</td> <td>bikramganj</td> </tr>
+                <tr> <td>Gyanjee</td> <td>21</td> <td>Bihar</td> </tr>
+                <tr> <td>Nandlal</td> <td>25</td> <td>Mau</td> </tr>
+                <tr> <td>Aman</td> <td>25</td> <td>chandauli</td> </tr>
+                <tr> <td>Pawan</td> <td>30</td> <td>Mugal Saray</td> </tr>
+                <tr> <td>Harsh</td> <td>31</td> <td>varanasi</td> </tr>
+                <tr> <td>Satpal</td> <td>32</td> <td>Uttar Pradesh</td> </tr>
+                <tr> <td>Abhishek</td> <td>29</td> <td>Uttar Pradesh</td> </tr>
+                <tr> <td>Nandini</td> <td>34</td> <td>Rauja</td> </tr>
+                <tr> <td>Salini</td> <td>31</td> <td>Sasaram</td> </tr>
+                <tr> <td>Sandeep</td> <td>15</td> <td>Sasaram</td> </tr>
+                <tr> <td>Rishi</td> <td>24</td> <td>Sasaram</td> </tr>
+                <tr> <td>Manish</td> <td>36</td> <td>Badhari</td> </tr>
+                <tr> <td>Sonu</td> <td>38</td> <td>Ara</td> </tr>
+                <tr> <td>Samresh</td> <td>50</td> <td>Baligaonn</td> </tr>
+                <tr> <td>Ritesh</td> <td>20</td> <td>Sasaram</td> </tr>
+                <tr> <td>Bajarang</td> <td>40</td> <td>Sasaram</td> </tr>
+                <tr> <td>Preeti</td> <td>34</td> <td>Chor</td> </tr>
+                <tr> <td>Chooti</td> <td>18</td> <td>Sasaram</td> </tr>
+                <tr> <td>Aradhana</td> <td>24</td> <td>Darigaon</td> </tr>
+                <tr> <td>Aakash</td> <td>22</td> <td>Sasaram</td> </tr>
+                <tr> <td>Suraj</td> <td>17</td> <td>Sasaram</td> </tr>
+                <tr> <td>Bittu</td> <td>20</td> <td>Chor</td> </tr>
+                <tr> <td>Chandani</td> <td>22</td> <td>Sasaram</td> </tr>
+                <tr> <td>Maya</td> <td>48</td> <td>Sasaram</td> </tr>
+                <tr> <td>Anju</td> <td>47</td> <td>Sahejani</td> </tr>
+                <tr> <td>Ritesh</td> <td>20</td> <td>Sasaram</td> </tr>
+                <tr> <td>Rahul</td> <td>19</td> <td>Dehri</td> </tr>
+                <tr> <td>Amit</td> <td>23</td> <td>Delhi</td> </tr>
+                <tr> <td>Anand</td> <td>21</td> <td>Kolkata</td> </tr>
+                <tr> <td>Ramesh</td> <td>12</td> <td>Mumbai</td> </tr>
+                <tr> <td>Mantu</td> <td>24</td> <td>Aurangabad</td> </tr>
+                <tr> <td>Akhilesh</td> <td>30</td> <td>Sahejani</td> </tr>
+                <tr> <td>Shivam</td> <td>15</td> <td>Piro</td> </tr>
+                <tr> <td>Juli</td> <td>28</td> <td>Kusudhi</td> </tr>
+                <tr> <td>Riya</td> <td>26</td> <td>Ara</td> </tr>
+                <tr> <td>kritika</td> <td>23</td> <td>Sasaram</td> </tr>
+                <tr> <td>Shaloni</td> <td>17</td> <td>bikramganj</td> </tr>
+                <tr> <td>Gyanjee</td> <td>21</td> <td>Bihar</td> </tr>
+                <tr> <td>Nandlal</td> <td>25</td> <td>Mau</td> </tr>
+                <tr> <td>Aman</td> <td>25</td> <td>chandauli</td> </tr>
+                <tr> <td>Pawan</td> <td>30</td> <td>Mugal Saray</td> </tr>
+                <tr> <td>Harsh</td> <td>31</td> <td>varanasi</td> </tr>
+                <tr> <td>Satpal</td> <td>32</td> <td>Uttar Pradesh</td> </tr>
+                <tr> <td>Abhishek</td> <td>29</td> <td>Uttar Pradesh</td> </tr>
+                <tr> <td>Nandini</td> <td>34</td> <td>Rauja</td> </tr>
+                <tr> <td>Salini</td> <td>31</td> <td>Sasaram</td> </tr>
+                <tr> <td>Sandeep</td> <td>15</td> <td>Sasaram</td> </tr>
+                <tr> <td>Rishi</td> <td>24</td> <td>Sasaram</td> </tr>
+                <tr> <td>Manish</td> <td>36</td> <td>Badhari</td> </tr>
+                <tr> <td>Sonu</td> <td>38</td> <td>Ara</td> </tr>
+                <tr> <td>Samresh</td> <td>50</td> <td>Baligaonn</td> </tr>
+                <tr> <td>Ritesh</td> <td>20</td> <td>Sasaram</td> </tr>
+                <tr> <td>Bajarang</td> <td>40</td> <td>Sasaram</td> </tr>
+                <tr> <td>Preeti</td> <td>34</td> <td>Chor</td> </tr>
+                <tr> <td>Chooti</td> <td>18</td> <td>Sasaram</td> </tr>
+                <tr> <td>Aradhana</td> <td>24</td> <td>Darigaon</td> </tr>
+                <tr> <td>Aakash</td> <td>22</td> <td>Sasaram</td> </tr>
+                <tr> <td>Suraj</td> <td>17</td> <td>Sasaram</td> </tr>
+                <tr> <td>Bittu</td> <td>20</td> <td>Chor</td> </tr>
+                <tr> <td>Chandani</td> <td>22</td> <td>Sasaram</td> </tr>
+                <tr> <td>Maya</td> <td>48</td> <td>Sasaram</td> </tr>
+                <tr> <td>Anju</td> <td>47</td> <td>Sahejani</td> </tr>
+                <tr> <td>Ritesh</td> <td>20</td> <td>Sasaram</td> </tr>
+                <tr> <td>Rahul</td> <td>19</td> <td>Dehri</td> </tr>
+                <tr> <td>Amit</td> <td>23</td> <td>Delhi</td> </tr>
+                <tr> <td>Anand</td> <td>21</td> <td>Kolkata</td> </tr>
+                <tr> <td>Ramesh</td> <td>12</td> <td>Mumbai</td> </tr>
+                <tr> <td>Mantu</td> <td>24</td> <td>Aurangabad</td> </tr>
+                <tr> <td>Akhilesh</td> <td>30</td> <td>Sahejani</td> </tr>
+                <tr> <td>Shivam</td> <td>15</td> <td>Piro</td> </tr>
+                <tr> <td>Juli</td> <td>28</td> <td>Kusudhi</td> </tr>
+                <tr> <td>Riya</td> <td>26</td> <td>Ara</td> </tr>
+                <tr> <td>kritika</td> <td>23</td> <td>Sasaram</td> </tr>
+                <tr> <td>Shaloni</td> <td>17</td> <td>bikramganj</td> </tr>
+                <tr> <td>Gyanjee</td> <td>21</td> <td>Bihar</td> </tr>
+                <tr> <td>Nandlal</td> <td>25</td> <td>Mau</td> </tr>
+                <tr> <td>Aman</td> <td>25</td> <td>chandauli</td> </tr>
+                <tr> <td>Pawan</td> <td>30</td> <td>Mugal Saray</td> </tr>
+                <tr> <td>Harsh</td> <td>31</td> <td>varanasi</td> </tr>
+                <tr> <td>Satpal</td> <td>32</td> <td>Uttar Pradesh</td> </tr>
+                <tr> <td>Abhishek</td> <td>29</td> <td>Uttar Pradesh</td> </tr>
+                <tr> <td>Nandini</td> <td>34</td> <td>Rauja</td> </tr>
+                <tr> <td>Salini</td> <td>31</td> <td>Sasaram</td> </tr>
+                <tr> <td>Sandeep</td> <td>15</td> <td>Sasaram</td> </tr>
+                <tr> <td>Rishi</td> <td>24</td> <td>Sasaram</td> </tr>
+                <tr> <td>Manish</td> <td>36</td> <td>Badhari</td> </tr>
+                <tr> <td>Sonu</td> <td>38</td> <td>Ara</td> </tr>
+                <tr> <td>Samresh</td> <td>50</td> <td>Baligaonn</td> </tr>
+                <tr> <td>Ritesh</td> <td>20</td> <td>Sasaram</td> </tr>
+                <tr> <td>Bajarang</td> <td>40</td> <td>Sasaram</td> </tr>
+                <tr> <td>Preeti</td> <td>34</td> <td>Chor</td> </tr>
+                <tr> <td>Chooti</td> <td>18</td> <td>Sasaram</td> </tr>
+                <tr> <td>Aradhana</td> <td>24</td> <td>Darigaon</td> </tr>
+                <tr> <td>Aakash</td> <td>22</td> <td>Sasaram</td> </tr>
+                <tr> <td>Suraj</td> <td>17</td> <td>Sasaram</td> </tr>
+                <tr> <td>Bittu</td> <td>20</td> <td>Chor</td> </tr>
+                <tr> <td>Chandani</td> <td>22</td> <td>Sasaram</td> </tr>
+                <tr> <td>Maya</td> <td>48</td> <td>Sasaram</td> </tr>
+                <tr> <td>Anju</td> <td>47</td> <td>Sahejani</td> </tr>
+                <tr> <td>Ritesh</td> <td>20</td> <td>Sasaram</td> </tr>
+                <tr> <td>Rahul</td> <td>19</td> <td>Dehri</td> </tr>
+                <tr> <td>Amit</td> <td>23</td> <td>Delhi</td> </tr>
+                <tr> <td>Anand</td> <td>21</td> <td>Kolkata</td> </tr>
+                <tr> <td>Ramesh</td> <td>12</td> <td>Mumbai</td> </tr>
+                <tr> <td>Mantu</td> <td>24</td> <td>Aurangabad</td> </tr>
+                <tr> <td>Akhilesh</td> <td>30</td> <td>Sahejani</td> </tr>
+                <tr> <td>Shivam</td> <td>15</td> <td>Piro</td> </tr>
+                <tr> <td>Juli</td> <td>28</td> <td>Kusudhi</td> </tr>
+                <tr> <td>Riya</td> <td>26</td> <td>Ara</td> </tr>
+                <tr> <td>kritika</td> <td>23</td> <td>Sasaram</td> </tr>
+                <tr> <td>Shaloni</td> <td>17</td> <td>bikramganj</td> </tr>
+                <tr> <td>Gyanjee</td> <td>21</td> <td>Bihar</td> </tr>
+                <tr> <td>Nandlal</td> <td>25</td> <td>Mau</td> </tr>
+                <tr> <td>Aman</td> <td>25</td> <td>chandauli</td> </tr>
+                <tr> <td>Pawan</td> <td>30</td> <td>Mugal Saray</td> </tr>
+                <tr> <td>Harsh</td> <td>31</td> <td>varanasi</td> </tr>
+                <tr> <td>Satpal</td> <td>32</td> <td>Uttar Pradesh</td> </tr>
+                <tr> <td>Abhishek</td> <td>29</td> <td>Uttar Pradesh</td> </tr>
+                <tr> <td>Nandini</td> <td>34</td> <td>Rauja</td> </tr>
+                <tr> <td>Salini</td> <td>31</td> <td>Sasaram</td> </tr>
+                <tr> <td>Sandeep</td> <td>15</td> <td>Sasaram</td> </tr>
+                <tr> <td>Rishi</td> <td>24</td> <td>Sasaram</td> </tr>
+                <tr> <td>Manish</td> <td>36</td> <td>Badhari</td> </tr>
+                <tr> <td>Sonu</td> <td>38</td> <td>Ara</td> </tr>
+                <tr> <td>Samresh</td> <td>50</td> <td>Baligaonn</td> </tr>
+                <tr> <td>Ritesh</td> <td>20</td> <td>Sasaram</td> </tr>
+                <tr> <td>Bajarang</td> <td>40</td> <td>Sasaram</td> </tr>
+                <tr> <td>Preeti</td> <td>34</td> <td>Chor</td> </tr>
+                <tr> <td>Chooti</td> <td>18</td> <td>Sasaram</td> </tr>
+                <tr> <td>Aradhana</td> <td>24</td> <td>Darigaon</td> </tr>
+                <tr> <td>Aakash</td> <td>22</td> <td>Sasaram</td> </tr>
+                <tr> <td>Suraj</td> <td>17</td> <td>Sasaram</td> </tr>
+                <tr> <td>Bittu</td> <td>20</td> <td>Chor</td> </tr>
+                <tr> <td>Chandani</td> <td>22</td> <td>Sasaram</td> </tr>
+                <tr> <td>Maya</td> <td>48</td> <td>Sasaram</td> </tr>
+                <tr> <td>Anju</td> <td>47</td> <td>Sahejani</td> </tr>
+            </tbody>
+          </table>
+     </div>
+
+
+
+     <!-- jquery js file -->
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+
+    <!-- bootstrap popper js and bootsrap js file -->
+    <!-- <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js"></script> -->
+
+    <!-- datatable main js file -->
+    <script src="datatable.js"></script>
+
+    <!-- datatable file for copy , excel, pdf exports start-->
+    <script src="https://cdn.datatables.net/buttons/2.3.6/js/dataTables.buttons.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.1.3/jszip.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.53/pdfmake.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.53/vfs_fonts.js"></script>
+    <script src="https://cdn.datatables.net/buttons/2.3.6/js/buttons.html5.min.js"></script>
+    <!-- datatable file for copy , excel, pdf exports end-->
+    
+    <!-- custom js file -->
+    <script src="index.js"></script>
+</body>
+</html>

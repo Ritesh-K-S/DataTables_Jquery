@@ -1,0 +1,111 @@
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.container{
+    width: 900px;
+    height: 85vh;
+    /* overflow: scroll; */
+}
+
+/* #mytable td,#mytable th{
+    text-align: center;
+} */
+
+thead tr{
+    background-color: #4682B4; 
+    color: white;
+}
+
+/* coloring of ording arrow */
+table.dataTable thead>tr>th.sorting:before,table.dataTable thead>tr>th.sorting:after,table.dataTable thead>tr>th.sorting_asc:before,table.dataTable thead>tr>th.sorting_asc:after,table.dataTable thead>tr>th.sorting_desc:before,table.dataTable thead>tr>th.sorting_desc:after,table.dataTable thead>tr>th.sorting_asc_disabled:before,table.dataTable thead>tr>th.sorting_asc_disabled:after,table.dataTable thead>tr>th.sorting_desc_disabled:before,table.dataTable thead>tr>th.sorting_desc_disabled:after,table.dataTable thead>tr>td.sorting:before,table.dataTable thead>tr>td.sorting:after,table.dataTable thead>tr>td.sorting_asc:before,table.dataTable thead>tr>td.sorting_asc:after,table.dataTable thead>tr>td.sorting_desc:before,table.dataTable thead>tr>td.sorting_desc:after,table.dataTable thead>tr>td.sorting_asc_disabled:before,table.dataTable thead>tr>td.sorting_asc_disabled:after,table.dataTable thead>tr>td.sorting_desc_disabled:before,table.dataTable thead>tr>td.sorting_desc_disabled:after 
+{
+  color: white;
+}
+
+/* opacity of ordering arrow initialy */
+table.dataTable thead>tr>th.sorting:before,table.dataTable thead>tr>th.sorting:after{
+    opacity: 0.5;
+    margin-bottom: 1px;
+}
+
+/* opacity of ordering arrow after sorting */
+table.dataTable thead>tr>th.sorting_asc:before,table.dataTable thead>tr>th.sorting_desc:after{
+    opacity: 1;
+}
+
+/* paginate button css overidding */
+.dataTables_wrapper .dataTables_paginate .paginate_button{
+     padding: 2px 9px;
+     background-color: #d3d6d9 !important;
+     color: #4682B4 !important;
+}
+
+/* current paginate button styling */
+.dataTables_wrapper .dataTables_paginate .paginate_button.current{
+    outline: none;
+    border: none;
+    box-shadow: none;
+    background-color: #4682B4 !important;
+    color: white !important;
+}
+
+/* styling on hover on current paginate button */
+.dataTables_wrapper .dataTables_paginate .paginate_button.current:hover{
+    outline: none;
+    border: none;
+    box-shadow: none;
+    color:  white !important;
+    text-decoration: underline !important;
+    background-color: #4682B4 !important;
+}
+
+/* styling on hover of paginate button excluding current button */
+.dataTables_wrapper .dataTables_paginate .paginate_button:hover{  
+    background-image: none !important;  
+    background-color: #b9bcbf !important;
+    outline: none;
+    border: none;
+    box-shadow: none;
+    color: #4682B4 !important;
+    text-decoration: underline !important;
+}
+
+/* syling of first,last,prev and next paginate button */
+.paginate_button.first.disabled .fa-backward-step,.paginate_button.previous.disabled .fa-caret-left,
+.paginate_button.last.disabled .fa-forward-step,.paginate_button.next.disabled .fa-caret-right
+{
+    color: #a4a7a9 !important;
+}
+
+/* setting the position of lenght and filter input by setting dom option in datatable parameter */
+#length-filter{
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 5px;
+}
+
+#dt-table{
+    margin-bottom: 5px;
+}
+
+.dt-buttons{
+  margin-bottom: 5px;
+}
+
+#dt-info{
+    color: #4682B4;
+    font-size: 18px;
+}
+
+
+
+
+
+
+
+
+
